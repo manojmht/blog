@@ -1,0 +1,15 @@
+blog_homepage:
+    path:     /
+    defaults: { _controller: BlogBundle:BlogBundle:index }
+    
+redis_data:
+    path: /redisSetData
+    defaults: {_controller: BlogBundle:BlogBundle:setRedisData}
+
+blog_action:
+    path: /blog/{title}
+    defaults: {_controller: BlogBundle:BlogBundle:blog} 
+
+about:
+   path: /about
+   defaults: {_controller:BlogBundle:BlogBundle:about}
