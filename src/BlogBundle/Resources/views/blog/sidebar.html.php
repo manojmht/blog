@@ -3,7 +3,7 @@
                             <div class="row twitter-widget-feed">
                                 <div class="row">
                                     <div class="col-md-2">
-                                        <img src="http://127.0.0.1:8000/bundles/blog/img/self.jpg" class="img-circle" height="100px" width="100px">
+                                        <img src="http://manojmahato.com/bundles/blog/img/self.jpg" class="img-circle" height="100px" width="100px">
                                     </div>
                                 </div>    
                                     <div class="col-md-9">

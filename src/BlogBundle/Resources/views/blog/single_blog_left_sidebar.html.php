@@ -4,7 +4,7 @@
                     <div class="row">
                         <main class="col-md-9 col-md-push-3" style="display: block;">
                             <article class="blog-item">
-                                <img class="img-responsive center-block" src="http://127.0.0.1:8000/bundles/blog/img/blog-item1.jpg" alt="blog-featured-image">
+                                <img class="img-responsive center-block" src="http://manojmahato.com/bundles/blog/img/blog-item1.jpg" alt="blog-featured-image">
                                 <div class="blog-heading">
                                     <h3 class="text-capitalize">single image post title here</h3>
                                     <span class="date">may 24,2015</span>
