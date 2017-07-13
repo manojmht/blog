@@ -19,7 +19,7 @@ class BlogBundleController extends Controller
     "id": "1",
     "title": "Install Composer on Amazon AMI running on EC2",
     "content": "",
-    "image": "http://manojmahato.com/bundles/bog/img/amazonAMI.png",
+    "image": "http://manojmahato.com/bundles/blog/img/amazonAMI.png",
     "comment": "Random Comment",
     "time": "March 2017"
   }
@@ -41,7 +41,7 @@ class BlogBundleController extends Controller
             "id": "1",
             "title": "Install Composer on Amazon AMI running on EC2",
             "content": "<p>SSH to the EC2 machine and then in console<\/p><pre><code>$ cd ~ <br>$ sudo curl -sS https:\/\/getcomposer.org\/installer | sudo php <br>$ sudo mv composer.phar \/usr\/local\/bin\/composer <br>$ sudo ln -s \/usr\/local\/bin\/composer \/usr\/bin\/composer<\/code<\/pre><br><p>Navigate to the project directory where composer.json is located and run<\/p>$ sudo composer install<\/code><\/pre>",
-            "image": "http://manojmahato.com/bundles/bog/img/amazonAMI.png",
+            "image": "http://manojmahato.com/bundles/blog/img/amazonAMI.png",
             "time": "March 2017"
           }
         ]';
