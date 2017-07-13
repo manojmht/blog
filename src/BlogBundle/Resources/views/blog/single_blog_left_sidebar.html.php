@@ -3,7 +3,7 @@
                 <div class="container">
                     <div class="row">
                        <?php include_once('sidebar.html.php'); ?>
-                        <main class="col-md-9" style="display: block;">
+                        <main class="col-md-9" style="display: block; margin-top: 25px !important;">
                             <article class="blog-item">
                                 <img class="img-responsive" src="<?php echo $data[0]['image'];?>" alt="blog-featured-image">
                                 <div class="blog-heading">

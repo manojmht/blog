@@ -31,22 +31,3 @@
                 </div><!-- /.container -->
             </nav>
             <!-- site-navigation end -->
-
-
-            <!-- header begin -->
-            <!--header class="page-head">
-                <div class="header-wrapper">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12">
-
-                                <ol class="breadcrumb">
-                                    <li><a href="#">blog</a></li>
-                                    <li class="active">multiple blog</li>
-                                </ol> <!-- end of /.breadcrumb -->
-
-                            <!--/div>
-                        </div>
-                    </div> <!-- /.container -->
-                <!--/div> <!-- /.header-wrapper -->
-            <!--/header> <!-- /.page-head (header end) -->

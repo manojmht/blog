@@ -3,7 +3,7 @@
                 <div class="container">
                     <div class="row">
                        <?php include('sidebar.html.php'); ?>
-                        <main class="col-md-9" style="display: block;">
+                        <main class="col-md-9" style="display: block; margin-top: 25px !important;">
                             <?php  foreach($home as $key => $value){ ?>
                                         <article class="blog-item">
                                                <img class="img-responsive" src="<?php echo $value['image']; ?>" alt="blog-featured-image">

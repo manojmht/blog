@@ -18,7 +18,7 @@ class BlogBundleController extends Controller
   {
     "id": "1",
     "title": "Install Composer on Amazon AMI running on EC2",
-    "content": "",
+    "content": "SSh to the EC2 machine and then in the console run the following code",
     "image": "http://manojmahato.com/bundles/blog/img/amazonAMI.png",
     "comment": "Random Comment",
     "time": "March 2017"
