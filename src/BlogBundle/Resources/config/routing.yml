@@ -13,3 +13,7 @@ blog_action:
 about:
    path: /about
    defaults: {_controller:BlogBundle:BlogBundle:about}
+   
+blog_data:
+   path: /setBlogData
+   defaults: {_controller:BlogBundle:BlogBundle:setRedisDataBlog}

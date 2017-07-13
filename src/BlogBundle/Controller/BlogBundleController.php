@@ -16,50 +16,39 @@ class BlogBundleController extends Controller
     public function setRedisDataAction(Request $request){
     $jsonData = '[
   {
-    "id": "59632f5b64874540e5c59684",
-    "title": "Random blog title",
-    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "image": "http://placehold.it/250x250",
+    "id": "1",
+    "title": "Install Composer on Amazon AMI running on EC2",
+    "content": "",
+    "image": "http://manojmahato.com/bundles/bog/img/amazonAMI.png",
     "comment": "Random Comment",
-    "time": "2014-08-28T12:14:42 -06:-30"
-  },
-  {
-    "id": "59632f5bd485869dd27bdafd",
-    "title": "Random blog title",
-    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "image": "http://placehold.it/250x250",
-    "comment": "Random Comment",
-    "time": "2014-08-28T12:14:42 -06:-30"
-  },
-  {
-    "id": "59632f5bb82f5141bd7de2e7",
-    "title": "Random blog title",
-    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "image": "http://placehold.it/250x250",
-    "comment": "Random Comment",
-    "time": "2014-08-28T12:14:42 -06:-30"
-  },
-  {
-    "id": "59632f5b58bea9f748c33ddd",
-    "title": "Random blog title",
-    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "image": "http://placehold.it/250x250",
-    "comment": "Random Comment",
-    "time": "2014-08-28T12:14:42 -06:-30"
-  },
-  {
-    "id": "59632f5bf13455d8072d45a5",
-    "title": "Random blog title",
-    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "image": "http://placehold.it/250x250",
-    "comment": "Random Comment",
-    "time": "2014-08-28T12:14:42 -06:-30"
+    "time": "March 2017"
   }
 ]';
         $redis = $this->container->get('snc_redis.default');
         $redis->hset("home:manoj", "data", $jsonData);
         echo "a"; die;
     }
+    
+    
+    /**
+    * @Route("/setBlogData")
+    */
+    public function setRedisDataBlogAction(Request $request){
+        $redis = $this->container->get('snc_redis.default');
+        $title = 'Install-Composer-on-Amazon-AMI-running-on-EC2';
+        $jsonData = '[
+         {
+            "id": "1",
+            "title": "Install Composer on Amazon AMI running on EC2",
+            "content": "<p>SSH to the EC2 machine and then in console<\/p><pre><code>$ cd ~ <br>$ sudo curl -sS https:\/\/getcomposer.org\/installer | sudo php <br>$ sudo mv composer.phar \/usr\/local\/bin\/composer <br>$ sudo ln -s \/usr\/local\/bin\/composer \/usr\/bin\/composer<\/code<\/pre><br><p>Navigate to the project directory where composer.json is located and run<\/p>$ sudo composer install<\/code><\/pre>",
+            "image": "http://manojmahato.com/bundles/bog/img/amazonAMI.png",
+            "time": "March 2017"
+          }
+        ]';
+        $redis->hset("blogManoj:singlePage", $title, $jsonData);
+        echo "a"; die;
+    }    
+    
     
     public function indexAction(Request $request)
     {   
@@ -78,8 +67,9 @@ class BlogBundleController extends Controller
     public function blogAction(Request $request){
        $title = $request->get('title');
         $redis = $this->container->get('snc_redis.default');
-        $data['content'] = $redis->hget("blogManoj:singlePage", $title);
-        $data['title'] = $title;
+        $content = $redis->hget("blogManoj:singlePage", $title);
+        $data['data'] = json_decode($content, TRUE);
+        $data['title'] = $title; 
         return $this->render('BlogBundle:blog:single_blog_left_sidebar.html.php', $data);
     }
     
