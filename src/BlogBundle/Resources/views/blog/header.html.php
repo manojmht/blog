@@ -20,23 +20,7 @@
             <!-- site-navigation start -->  
             <nav id="mainNavigation" class="navbar navbar-dafault main-navigation" role="navigation">
                 <div class="container">       
-                    <div class="navbar-header">                        
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav-collapse">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        
-                        <!-- navbar logo -->
-                    
-                        <!-- navbar logo -->
-
-                    </div><!-- /.navbar-header -->
-
-                    <!-- nav links -->
-                    <div class="collapse navbar-collapse" id="main-nav-collapse">
-                        <ul class="nav navbar-nav navbar-right text-uppercase">
+                    <ul class="nav navbar-nav navbar-right text-uppercase">
                             <li>
                                 <a href="/"><span>Home</span></a>                        
                             </li>
@@ -44,10 +28,7 @@
                                 <a href="/about"><span>About</span></a>                        
                             </li>
                         </ul>
-                    </div><!-- nav links -->
-                    
                 </div><!-- /.container -->
-                <hr>
             </nav>
             <!-- site-navigation end -->
 

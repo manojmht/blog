@@ -2,7 +2,8 @@
  <section class="blog-content">
                 <div class="container">
                     <div class="row">
-                        <main class="col-md-9 col-md-push-3" style="display: block;">
+                       <?php include('sidebar.html.php'); ?>
+                        <main class="col-md-9" style="display: block;">
                             <?php  foreach($home as $key => $value){ ?>
                                         <article class="blog-item">
                                                 <div class="">
@@ -19,7 +20,6 @@
                         </main>
 
                         <!-- begin sidebar -->
-                         <?php include('sidebar.html.php'); ?>
                         <!-- end sidebar -->
                     </div>
                 </div>

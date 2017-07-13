@@ -2,7 +2,8 @@
         <section class="blog-content">
                 <div class="container">
                     <div class="row">
-                        <main class="col-md-9 col-md-push-3" style="display: block;">
+                       <?php include_once('sidebar.html.php'); ?>
+                        <main class="col-md-9" style="display: block;">
                             <article class="blog-item">
                                 <img class="img-responsive center-block" src="http://manojmahato.com/bundles/blog/img/blog-item1.jpg" alt="blog-featured-image">
                                 <div class="blog-heading">
@@ -17,12 +18,7 @@
                                     Mauris nunc leo, sollicitudin a ligula ut, iaculis bibendum lorem. Duis gravida suscipit purus, at consequat diam sagittis sit amet. Mauris sed nisl vel urna egestas elementum eget quis ipsum. Nulla a enim et justo facilisis ornare. Sed ante sem, dignissim a vehicula et, rutrum volutpat turpis. 
                                 </p>
                                 <div class="row">
-                                    <div class="col-md-6">
-                                        <blockquote>
-                                            <p>Duis eget ultricies lorem, et rhoncus augue. Aliquam id est sem tincidunt nisi ac, tristique enim. enim eget facilisis orcidearn malesuada.</p>
-                                            <footer>Technext</footer>
-                                        </blockquote>
-                                    </div>
+                                    
 
                                     <div class="col-md-6">
                                         <div class="article-summary">
@@ -48,68 +44,7 @@
                                         </p>
                                     </div>
                                 </div>
-
-                                <div class="single-blog-page-button">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <a href="#" class="btn blog-btn">
-                                                <span><i class="fa fa-long-arrow-left"></i></span>
-                                                Previous Post
-                                            </a>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <a href="#" class="btn blog-btn">
-                                                Next Post
-                                                <span><i class="fa fa-long-arrow-right"></i></span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="author">
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="about-author">
-                                                <div class="row">
-                                                    <div class="col-md-3">
-                                                        <img src="assets/img/commenter2.jpg" class="img-responsive center-block img-circle" alt="author">
-                                                    </div>
-                                                    <div class="col-md-9">
-                                                        <p>
-                                                            <strong>About Author</strong>
-                                                            <span class="author-name text-uppercase">david martin</span>
-                                                        </p>
-                                                        <p>
-                                                            Vestibulum varius fermentum risus vitae lacinia neque auctor nec. Nunc ac rutrum nulla. Nul maximus dolor in quam euismod ac viverra libero aliquet. Nunc sed nunc malesuada aliquet turpis eu dictum lectus. Cras eget sollicitudin lorem. Etiam commodo ultricies luctus.
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="author-contact">
-                                                <div class="row">
-                                                    <div class="col-md-6">
-                                                        <p class="pull-left">
-                                                            <span><i class="fa fa-picture-o"></i></span>
-                                                            <strong>25 Total Posts</strong>
-                                                        </p>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <ul class="author-contact-button pull-right">
-                                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                                            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                                                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                                            <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="comments">
+                                <!--div class="comments">
                                     <div class="row">
                                         <div class="col-md-12">
                                             <h3>2 Comments</h3>
@@ -148,9 +83,9 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div-->
 
-                                <div class="comment-post">
+                                <!--div class="comment-post">
                                     <h3>Post A Comment</h3>
                                     <form method="post" >
                                         <div class="row">
@@ -176,13 +111,13 @@
                                         
                                         <button type="submit" id="submit" name="submit" class="btn btn-black">post comment</button>
                                     </form>
-                                </div>
+                                </div-->
                             </article>
                         </main>
 
 
                         <!-- begin sidebar -->
-                         <?php include_once('sidebar.html.php'); ?>
+                         
                         <!-- end sidebar -->
                     </div>
                 </div>

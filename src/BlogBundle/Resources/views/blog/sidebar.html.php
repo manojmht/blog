@@ -1,8 +1,8 @@
-            <aside class="col-md-3 col-md-pull-9">
-                <div class="" style="margin-bottom:12px;">
+            <aside class="col-md-3">
+                <div class="col-xs-offset-1 col-sm-offset-1" style="margin-bottom:12px;">
                             <div class="row twitter-widget-feed">
                                 <div class="row">
-                                    <div class="col-md-2">
+                                    <div class="col-md-2" style="margin-left:10px;">
                                         <img src="http://manojmahato.com/bundles/blog/img/self.jpg" class="img-circle" height="100px" width="100px">
                                     </div>
                                 </div>    
@@ -89,7 +89,7 @@
                                             </div>
                                         </div>
                                     </div-->
-                                </div>
+                                <!--/div>
                             </div> <!-- /.tab-widget -->
                             <!-- begin faq-widget -->
                             <!-- begin tag-widget -->
