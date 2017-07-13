@@ -5,7 +5,7 @@
                        <?php include_once('sidebar.html.php'); ?>
                         <main class="col-md-9" style="display: block;">
                             <article class="blog-item">
-                                <img class="img-responsive center-block" src="<?php echo $data[0]['image'];?>" alt="blog-featured-image">
+                                <img class="img-responsive" src="<?php echo $data[0]['image'];?>" alt="blog-featured-image">
                                 <div class="blog-heading">
                                     <h3 class=""><?php echo $data[0]['title']; ?></h3>
                                     <span class="date"><?php echo $data[0]['time']; ?></span>

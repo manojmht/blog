@@ -1,5 +1,5 @@
             <aside class="col-md-3">
-                <div class="col-xs-offset-1 col-sm-offset-1" style="margin-bottom:12px;">
+                <div class="col-xs-offset-1 col-sm-offset-1" style="margin-bottom:20px;">
                             <div class="row twitter-widget-feed">
                                 <div class="row">
                                     <div class="col-md-2" style="margin-left:10px;">

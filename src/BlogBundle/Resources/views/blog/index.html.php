@@ -6,7 +6,7 @@
                         <main class="col-md-9" style="display: block;">
                             <?php  foreach($home as $key => $value){ ?>
                                         <article class="blog-item">
-                                               <img class="img-responsive center-block" src="<?php echo $value['image']; ?>" alt="blog-featured-image">
+                                               <img class="img-responsive" src="<?php echo $value['image']; ?>" alt="blog-featured-image">
                                                 <div class="">
                                                     <h3 class=""><a href="/blog/<?php echo str_replace(' ', '-', $value['title']); ?>"><?php echo $value['title']; ?></a></h3>
                                                     <span class="date"><?php echo $value['time']; ?></span>
