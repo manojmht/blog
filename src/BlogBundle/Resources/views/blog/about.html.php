@@ -81,4 +81,4 @@ While I’m away from work, I find time solving puzzles and challenging to keep 
                     </div>
                 </section-->
             </div> <!-- end of /.main-content -->
-<?php include('footer.html.php');?>
+<?php// include('footer.html.php');?>
