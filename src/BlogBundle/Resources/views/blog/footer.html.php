@@ -28,10 +28,6 @@
                             <li><a href="#home">
                                 <span>home</span>
                             </a></li>
-                            <li><a href="#about">
-                                <span>shop</span>
-                            </a></li>
-
                             <li><a href="#contact">
                                 <span>contact</span>
                             </a></li>

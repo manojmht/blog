@@ -25,4 +25,4 @@
                     </div>
                 </div>
             </section>
-            <?php include('footer.html.php');?>
+            <?php// include('footer.html.php');?>

@@ -16,7 +16,7 @@
                         <div class="row">
                             <div class="col-md-10 col-md-offset-1 text-center">
                                 <p class="story-description">
-                                   I’m a backend developer currently located in Delhi, a polyglot, I’m a flexible and committed developer ready to face new challenges. A geek in century terms, I love coding and everything about it. My favorite language of choice is ** and my expertise in Data Structures and Algorithms just blends in to the formula.</p>
+                                   I’m a backend developer currently located in Delhi, a polyglot, I’m a flexible and committed developer ready to face new challenges. A geek in century terms, I love coding and everything about it.My expertise are in Data Structures and Algorithms just blends in to the formula.</p>
                                 
 <p>I have 3 years of experience in backend development and have also worked in collaboration with front-end team too. Apart from backend technologies, I‘m quite acquainted with front-end technologies like HTML, CSS, Bootstrap and JavaScript  making me a valuable asset to the team.
 While I’m away from work, I find time solving puzzles and challenging to keep my mind sharp and ready for the next task. Another interest that I follow is photography and swimming keeps me fit and relaxed for the weekends.
@@ -32,7 +32,7 @@ While I’m away from work, I find time solving puzzles and challenging to keep 
 
                  <!-- begin skill section -->
 
-                <section class="bg-light-gray skill">
+                <!--section class="bg-light-gray skill">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-6">
@@ -76,9 +76,9 @@ While I’m away from work, I find time solving puzzles and challenging to keep 
                                          </div>
                                     </div>
                                 </div> <!-- /.skill-level -->
-                            </div>
-                        </div>
+                            <!--/div>
+                        <!--/div>
                     </div>
-                </section>
+                </section-->
             </div> <!-- end of /.main-content -->
 <?php include('footer.html.php');?>
