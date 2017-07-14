@@ -14,6 +14,7 @@
         <?php foreach ($view['assetic']->stylesheets(array('bundles/blog/css/*'), array('cssrewrite')) as $url): ?>
         <link rel="stylesheet" href="<?php echo $view->escape($url) ?>" />
         <?php endforeach ?>
+        <script type='text/javascript' src='//platform-api.sharethis.com/js/sharethis.js#property=59689afb80bb1d0011ab6a4a&product=inline-share-buttons' async='async'></script>
     </head>
     <body>
         <div id="multiple-blog-page">

@@ -10,6 +10,7 @@
                                     <h3 class=""><?php echo $data[0]['title']; ?></h3>
                                     <span class="date"><?php echo $data[0]['time']; ?></span>
                                 </div>
+                                <div class="sharethis-inline-share-buttons" style="margin-bottom:10px !important;"></div>
                                 <?php echo $data[0]['content']; ?>
                                 <!--div class="comments">
                                     <div class="row">

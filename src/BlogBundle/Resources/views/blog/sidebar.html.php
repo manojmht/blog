@@ -11,7 +11,7 @@
                                             <p>
                                                 <span class="name">Manoj Mahato</span>
                                             </p>
-                                            <p>Backend Developer | RESTful API | Electronics and Communication Engineer | Photographer</p>
+                                            <p>Backend Developer | RESTful Services | Electronics and Communication Engineer | Photographer</p>
                                         </div>
                                     </div>
                              </div>

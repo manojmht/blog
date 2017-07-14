@@ -1,28 +1,4 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> 
-
-<html class="no-js"> <!--<![endif]-->
-    <head>
-
-        <title>Agency</title>
-
-        <!-- meta -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-        
-        <!-- stylesheets -->
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/css/animate.css">
-        <link rel="stylesheet" href="assets/css/style.css">
-
-
-    </head>
-
+<?php include_once('header.html.php'); ?>
     <body>
         <div id="error-page">
             <!-- fix the height of the whole content -->
@@ -70,15 +46,9 @@
                                 <div class="row">
                                     <div class="error-page-btn">
                                         <div class="col-md-6">
-                                            <a href="index.html" class="btn btn-black">
+                                            <a href="/" class="btn btn-black">
                                                 go back
                                             </a> <!-- /go-back button -->
-                                        </div> <!-- /.col-md-6 -->
-
-                                        <div class="col-md-6">
-                                            <a href="index.html" class="btn btn-white">
-                                                get help
-                                            </a> <!-- /get help button -->
                                         </div> <!-- /.col-md-6 -->
                                     </div><!-- /.error-page-btn -->
                                 </div>
